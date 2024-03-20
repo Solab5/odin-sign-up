@@ -24,39 +24,42 @@
             </div>
             <div class="signin">
                 <form action="">
-                    <fieldset>
-                        <legend>Let's do this!</legend>
-                            <div class="signup-form">
-                                <div class="first-sign">
-                                    <div>
-                                        <label for="f-name">FIRST NAME</label>
-                                        <input type="text" id="f-name" name="f-name"  class="text-form">
-                                    </div>
-                                    <div>
-                                        <label for="email">EMAIL</label>
-                                        <input type="email" id="email" name="email" class="text-form">
-                                    </div>
-                                    <div>
-                                        <label for="pwd">PASSWORD</label>
-                                        <input type="password" id="pwd" name="password" class="text-form" required>
-                                    </div>
-                                </div>
-
-                                <div class="second-sign">
-                                    <div>
-                                        <label for="l-name">LAST NAME</label>
-                                        <input type="text" id="l-name" name="l-name" class="text-form">
-                                    </div>
-                                    <div>
-                                        <label for="telephone">PHONE NUMBER</label>
-                                        <input type="tel" id="telephone" name="telephone" class="text-form">
-                                    </div>
-                                    <div>
-                                        <label for="cpwd">CONFIRM PASSWORD</label>
-                                        <input id="cpwd" type="password" name="confirm-password" class="text-form">
-                                    </div>
-                                </div>
+                    
+                    <h1>Let's do this!</h1>
+                    <div class="signup-form">
+                        <div class="name">
+                            <div class="first-name">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name" required>
                             </div>
+                            <div class="last-name">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+
+                        </div>
+                        <div class="details">
+                            <div class="first-name">
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email" name="email" required>
+                            </div>
+                            <div class="telephone">
+                                <label for="telephone">PHONE NUMBER</label>
+                                <input type="tel" id="telephone" name="telephone" required>
+                            </div>
+                        </div>
+                        <div class="passwords">
+                            <div class="password">
+                                <label for="pwd">PASSWORD</label>
+                                <input type="password" id="pwd" name="pwd" required>
+                            </div>
+                            <div class="confirm-password">
+                                <label for="cpwd">CONFIRM PASSWORD</label>
+                                <input type="password" id="cpwd" name="cpwd" required>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </form>
 

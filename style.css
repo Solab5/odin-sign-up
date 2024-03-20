@@ -51,24 +51,42 @@ body {
     flex-direction: column;
 }
 
-.intro, .signup {
+.intro, .signup{
     background-color: grey;
     height: 300px;
     padding-left: 40px;
 }
 
-.signin {
-    background-color: whitesmoke;
-    height: 300px;
+h1 {
     padding-left: 40px;
-    padding-top: 20px;
-    border: 0;
+    padding-bottom: 2px;
 }
 
 .signup-form {
-    display: flex;
-    gap: 80px;
+    height: 200px;
+    padding-top: 10px;
 }
+
+.name, .details, .passwords {
+    display: flex;
+    gap: 30px;
+    padding-left: 40px;
+    padding-top: 10px;
+    width: 50%;
+}
+
+.name {
+    padding-top: 2px;
+}
+
+input {
+    padding: 0.4rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    border: 0.07rem solid #E5E7EB;
+    border-radius: 4px;
+    width: 13rem;
+  }
 
 p {
     font-size: 24px;
@@ -80,20 +98,22 @@ p {
     width: 80%;
 }
 
-.text-form {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 10px;
-    border-radius: 4px;
+/* input:invalid {
+    border: 2px solid red;
+  } */
+
+input[type='text']:focus,
+input[type='tel']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+    border: 0.07rem solid rgb(23, 50, 255);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0.1rem 0.1rem 0.2rem #888888;
 }
 
-input:invalid {
-    border: 2px dashed red;
-  }
 
-
-button {
+  button {
     color: white;
     background-color: #596D48;
     margin-top: 20px;
