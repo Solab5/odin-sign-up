@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <div>
@@ -30,28 +31,29 @@
                         <div class="name">
                             <div class="first-name">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" name="first-name" required>
+                                <input type="text" id="first-name" name="first-name">
                             </div>
                             <div class="last-name">
                                 <label for="last-name">LAST NAME</label>
-                                <input type="text" id="last-name" name="last-name" required>
+                                <input type="text" id="last-name" name="last-name">
                             </div>
 
                         </div>
                         <div class="details">
                             <div class="first-name">
                                 <label for="email">EMAIL</label>
-                                <input type="text" id="email" name="email" required>
+                                <input type="text" id="email" name="email">
                             </div>
                             <div class="telephone">
                                 <label for="telephone">PHONE NUMBER</label>
-                                <input type="tel" id="telephone" name="telephone" required>
+                                <input type="tel" id="telephone" name="telephone">
                             </div>
                         </div>
                         <div class="passwords">
                             <div class="password">
                                 <label for="pwd">PASSWORD</label>
                                 <input type="password" id="pwd" name="pwd" required>
+                                <div class="error"></div>
                             </div>
                             <div class="confirm-password">
                                 <label for="cpwd">CONFIRM PASSWORD</label>
@@ -60,15 +62,16 @@
 
                         </div>
                     </div>
+                    <div class="signup"> 
+                        <button type="submit" class="button"> Create Account</button> 
+                        <p>Already have an account? Log in</p>          
+        
+                    </div>
 
                 </form>
 
             </div>
-            <div class="signup"> 
-                <button type="submit" class="button"> Create Account</button> 
-                <p>Already have an account? Log in</p>          
-
-            </div>
+    
         
         </div>
     </div>
